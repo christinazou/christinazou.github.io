@@ -6,18 +6,12 @@ description: a note for Design Pattern. I found several reading materials on the
 tags: [Design Pattern]
 ---
 
-
-
 Design pattern is more like ideas than coding templates.
 
 I read the tutorials form [tutorialspoint.com](https://www.tutorialspoint.com/design_pattern/) and [journaldev.com](https://www.journaldev.com/1827/java-design-patterns-example-tutorial), then I watched the vedios from [Design Patterns
 by University of Alberta](https://www.coursera.org/learn/design-patterns/home/welcome).
 
-All the material I listed here is written in Java only because I am more familiar with Java. Design Pattern applies to all object-oriented language. However, Design Pattern is essential to Java learning. Many Java frameworks are built upon Design Pattern, therefore the knowledge of Design Patten will help understand the document of Java framework like Spring, greatly. 
-
-
-
-
+All the material I listed here is written in Java only because I am more familiar with Java. Design Pattern applies to all object-oriented language. However, Design Pattern is essential to Java learning. Many Java frameworks are built upon Design Pattern, therefore the knowledge of Design Patten will help understand the document of Java framework like Spring. 
 
 * Creational Design Patterns
 	* Singleton Pattern
