@@ -6,7 +6,7 @@ description: a note for Design Pattern. I found several reading materials on the
 tags: [Design Pattern]
 ---
 
-**Design Pattern is actual solutions used in industrial software.** Over the years, developers have experimented with variety design solutions, and Desigh Pattern is a set of solutions that often create the best outcome. Each Design pattern has created for a particular purpose. The scope of application is as important as the solution itself.
+**Design Pattern is actual solutions used in industrial software.** Over the years, developers have experimented with a variety of design solutions, and Desigh Pattern is a set of solutions that often create the best outcome. Each Design pattern has created for a particular purpose. The scope of application is as important as the solution itself.
 
 **Design Pattern is more about concepts than coding templates.** It is a guideline to make the code more reusable and to prevent mistakes.
 
@@ -17,9 +17,9 @@ All the material I went through is written in Java, only because that I am more 
 ### Category of Design Pattern
 
 >Creational Patterns tackle how you handle creating new objects.
-
+>
 >Structural patterns describe how objects are connected to each other. There are many different ways you can structure objects depending on the relationship you'd like between them. Not only do structural patterns describe how different objects have relationships, but also how subclasses and classes interact through inheritance.
-
+>
 >These patterns focus on how objects distribute work.They describe how each object does a single cohesive function. Behavioral patterns also focus on how independent objects work towards a common goal.
 
 * Creational Design Patterns
@@ -53,7 +53,10 @@ All the material I went through is written in Java, only because that I am more 
 
 Singleton Pattern is to make sure there is only one instance in whole application, such as setting file. 
 
-must have element:
+element:
+private constructor of Singleton class.
+private class variable refering to the one instance of your Singleton class.
+public method in the class that will create an instance of this class, but only if an instance does not exist already.
 
 ### Factory Pattern
 
