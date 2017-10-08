@@ -2,14 +2,16 @@
 layout: post
 title: Design Pattern note 1
 date: 2017-10-08 00:00:00 +0300
-description: a note for Design Pattern. I found several reading materials on the web and a course on Coursera. Here is what I learned. # Add post description (optional)
+description: a note for Design Pattern. I found several reading materials on the internet and a course on Coursera. Here is what I learned. # Add post description (optional)
 tags: [Design Pattern]
 ---
-Design Pattern is actual solutions used in industrial software. Over the years, developers have experimented with variety design solutions, and Desigh Pattern is a set of solutions that often create the best outcome. Each Design pattern has created for a particular purpose. The scope of application is as important as the solution itself.
 
-Design Pattern is more about concepts than coding templates. It is a guideline to make the code more reusable and to prevent mistakes.
 
-Design Pattern give a name for each pattern, so developers do not have to repeat all the details in communication. Prior knowledge of particular pattern not only give info about the solution, it also describes the original problem. Knowledge of design patterns leaves less room for misunderstanding. 
+＊Design Pattern is actual solutions used in industrial software.＊ Over the years, developers have experimented with variety design solutions, and Desigh Pattern is a set of solutions that often create the best outcome. Each Design pattern has created for a particular purpose. The scope of application is as important as the solution itself.
+
+＊Design Pattern is more about concepts than coding templates.＊ It is a guideline to make the code more reusable and to prevent mistakes.
+
+＊Design Pattern give a name for each pattern,＊ so developers do not have to repeat all the details in communication. Prior knowledge of particular pattern not only give info about the solution, it also describes the original problem. Knowledge of design patterns leaves less room for misunderstanding. 
 
 All the material I went through is written in Java, only because that I am more familiar with Java. Design Pattern applies to all object-oriented language. However, Design Pattern is essential to Java learning. Many Java frameworks are built upon Design Pattern, therefore the knowledge of Design Patten will help understand the document of Java framework like Spring. 
 
