@@ -106,9 +106,7 @@ the Brige Pattern sound similar to Adapter Pattern and Facade Pattern. what the 
 
 ## Reference
 
-Since the famous book "Design Pattern" written by the gang of four uses c++ as implementing language, I choose other material to look at instead. I read the tutorials form [tutorialspoint.com](https://www.tutorialspoint.com/design_pattern/) and [journaldev.com](https://www.journaldev.com/1827/java-design-patterns-example-tutorial), then I watched the vedios from [Design Patterns
-by University of Alberta](https://www.coursera.org/learn/design-patterns/home/welcome). 
+Since the famous book "Design Pattern" written by the gang of four uses c++ as implementing language, I choose other material to look at instead. I read the tutorials form [tutorialspoint.com](https://www.tutorialspoint.com/design_pattern/) and [journaldev.com](https://www.journaldev.com/1827/java-design-patterns-example-tutorial), then I watched the vedios from [Design Patterns by University of Alberta](https://www.coursera.org/learn/design-patterns/home/welcome). 
 
 This is a very clean explaination of [Adapter Pattern](https://stackoverflow.com/questions/1299167/understanding-adapter-pattern). 
-
 
