@@ -9,12 +9,13 @@ tags: [Design Pattern]
 **Design Pattern is actual solutions used in industrial software.** Over the years, developers have experimented with a variety of design solutions, and Desigh Pattern is a set of solutions that often create the best outcome. Each Design pattern has created for a particular purpose. The scope of application is as important as the solution itself.
 
 **Design Pattern is more about concepts than coding templates.** It is a guideline to make the code more reusable and to prevent mistakes.
+>Design patterns are defined by their purpose or intent, and not the exact code
 
 **Design Pattern Design Pattern makes communication more effective and prevents misunderstanding.** Design Pattern give a name for each pattern, so developers do not have to repeat all the details in communication. Prior knowledge of particular pattern not only give info about the solution, it also describes the original problem. Knowledge of design patterns leaves less room for misunderstanding. 
 
 All the material I went through is written in Java, only because that I am more familiar with Java. Design Pattern applies to all object-oriented language. However, Design Pattern is essential to Java learning. Many Java frameworks are built upon Design Pattern. If you are going to read the document of Java framework like Spring, instead of starting right away, you might want to understand knowledge of Design Pattern first.
 
-### Category of Design Pattern
+## Category of Design Pattern
 
 >Creational Patterns tackle how you handle creating new objects.
 >
@@ -49,22 +50,38 @@ All the material I went through is written in Java, only because that I am more 
 	* Iterator Pattern
 	* Memento Pattern
 
-### Singleton Pattern
+## Singleton Pattern
 
 Singleton Pattern is to make sure there is only one instance in whole application, such as setting file. 
 
 element:
-private constructor of Singleton class.
-private class variable refering to the one instance of your Singleton class.
-public method in the class that will create an instance of this class, but only if an instance does not exist already.
+* private constructor of Singleton class.
+* private class variable refering to the one instance of your Singleton class.
+* public method in the class that will create an instance of this class, but only if an instance does not exist already.
 
-### Factory Pattern
+## Factory Pattern
 
 Factory class create objects like real factory create products, there are different categories and products can send to different stores.
 
 must have element:
+* a method in Factory class.
+* In the method declares a product variable, which will refer to the knife object to be created.
+* In the method the conditionals determine which subclass of product is actually instantiated.
 
-### Composite Pattern
+the Factory method approach is described in the book of the gang of four.
+
+## Facade Pattern
+
+Facade Pattern provide a easy way for client code to interact with a complex system.
+
+must have element:
+* Design the interface.
+* Implement the interface with one or more classes.
+* Create the facade class and wrap the classes that implement the interface.
+* a facade class can be used to wrap all the interfaces and classes for a subsystem.
+* the intances, which of the classes that implement the interface, in facade class should be pravite.
+
+## Composite Pattern
 
 Composite Pattern helps create a tree-sharp structure, which consists of instances of composite class, each works as a tree node.
 
