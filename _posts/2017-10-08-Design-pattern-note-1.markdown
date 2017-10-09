@@ -54,17 +54,17 @@ All the material I went through is written in Java, only because that I am more 
 
 Singleton Pattern is to make sure there is only one instance in whole application, such as setting file. 
 
-element:
-* private constructor of Singleton class.
-* private class variable refering to the one instance of your Singleton class.
-* public method in the class that will create an instance of this class, but only if an instance does not exist already.
+key elements:
+* A private constructor of Singleton class.
+* A private class variable refering to the one instance of your Singleton class.
+* A public method in the class that will create an instance of this class, but only if an instance does not exist already.
 
 ## Factory Pattern
 
-Factory class create objects like real factory create products, there are different categories and products can send to different stores.
+Factory class creates objects like a real factory creates products. There are different categories and products can send to different stores.
 
-must have element:
-* a method in Factory class.
+key elements:
+* A method in Factory class.
 * In the method declares a product variable, which will refer to the knife object to be created.
 * In the method the conditionals determine which subclass of product is actually instantiated.
 
@@ -72,14 +72,28 @@ the Factory method approach is described in the book of the gang of four.
 
 ## Facade Pattern
 
-Facade Pattern provide a easy way for client code to interact with a complex system.
+Facade Pattern provides a easy way for client code to interact with a complex system.
 
-must have element:
+key elements:
 * Design the interface.
 * Implement the interface with one or more classes.
 * Create the facade class and wrap the classes that implement the interface.
-* a facade class can be used to wrap all the interfaces and classes for a subsystem.
-* the intances, which of the classes that implement the interface, in facade class should be pravite.
+* A facade class can be used to wrap all the interfaces and classes for a subsystem.
+* The intances, which of the classes that implement the interface, in facade class should be pravite.
+
+## Adapter Pattern
+
+Generally the adapter pattern transforms one interface into another. The adapter pattern is usually used when you don't have control over the original class. 
+
+One way to implement Adapter Pattern is to use wrapper classes that implement a unified interface to wrap the original classes.
+
+key elements:
+* original class.
+* design the interface.
+* Implement wrapper class using the interface
+* In wrapper class, a class variable refering to a instance of the original class
+* In wrapper class, the implementation of methods delegate to methods of the original class
+
 
 ## Composite Pattern
 
@@ -87,7 +101,15 @@ Composite Pattern helps create a tree-sharp structure, which consists of instanc
 
 must have element: 
 
+## Qustions
+
+the Brige Pattern sound similar to Adapter Pattern and Facade Pattern. what the difference between them? why Brige Pattern is nessesery? 
+
+## Reference
+
 Since the famous book "Design Pattern" written by the gang of four uses c++ as implementing language, I choose other material to look at instead. I read the tutorials form [tutorialspoint.com](https://www.tutorialspoint.com/design_pattern/) and [journaldev.com](https://www.journaldev.com/1827/java-design-patterns-example-tutorial), then I watched the vedios from [Design Patterns
 by University of Alberta](https://www.coursera.org/learn/design-patterns/home/welcome). 
+
+This is a very clean explaination of [Adapter Pattern](https://stackoverflow.com/questions/1299167/understanding-adapter-pattern). 
 
 
