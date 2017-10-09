@@ -11,7 +11,8 @@ tags: [Design Pattern]
 **Design Pattern is more about concepts than coding templates.** It is a guideline to make the code more reusable and to prevent mistakes.
 >Design patterns are defined by their purpose or intent, and not the exact code
 
-**Design Pattern Design Pattern makes communication more effective and prevents misunderstanding.** Design Pattern give a name for each pattern, so developers do not have to repeat all the details in communication. Prior knowledge of particular pattern not only give info about the solution, it also describes the original problem. Knowledge of design patterns leaves less room for misunderstanding. 
+**Design Pattern makes communication more effective and prevents misunderstanding.** Design Pattern give a name for each pattern, so developers do not have to repeat all the details in communication. 
+>Prior knowledge of particular pattern not only give info about the solution, it also describes the original problem. Knowledge of design patterns leaves less room for misunderstanding. 
 
 All the material I went through is written in Java, only because that I am more familiar with Java. Design Pattern applies to all object-oriented language. However, Design Pattern is essential to Java learning. Many Java frameworks are built upon Design Pattern. If you are going to read the document of Java framework like Spring, instead of starting right away, you might want to understand knowledge of Design Pattern first.
 
@@ -83,7 +84,7 @@ key elements:
 
 ## Adapter Pattern
 
-Generally the adapter pattern transforms one interface into another. The adapter pattern is usually used when you don't have control over the original class. 
+>Generally the adapter pattern transforms one interface into another. The adapter pattern is usually used when you don't have control over the original class. 
 
 One way to implement Adapter Pattern is to use wrapper classes that implement a unified interface to wrap the original classes.
 
@@ -96,7 +97,7 @@ key elements:
 
 ## Composite Pattern
 
-Composite Pattern helps create a tree-sharp structure, which consists of instances of composite class, each works as a tree node.
+Composite Pattern helps create a structure, which consists of instances of composite class. Each instance works as a node.
 
 must have element: 
 
@@ -104,7 +105,7 @@ must have element:
 
 the Brige Pattern sound similar to Adapter Pattern and Facade Pattern. what the difference between them? why Brige Pattern is nessesery? 
 
-## Reference
+## References
 
 Since the famous book "Design Pattern" written by the gang of four uses c++ as implementing language, I choose other material to look at instead. I read the tutorials form [tutorialspoint.com](https://www.tutorialspoint.com/design_pattern/) and [journaldev.com](https://www.journaldev.com/1827/java-design-patterns-example-tutorial), then I watched the vedios from [Design Patterns by University of Alberta](https://www.coursera.org/learn/design-patterns/home/welcome). 
 
