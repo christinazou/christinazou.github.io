@@ -24,8 +24,8 @@ All the material I went through is written in Java, only because that I am more 
 >These patterns focus on how objects distribute work.They describe how each object does a single cohesive function. Behavioral patterns also focus on how independent objects work towards a common goal.
 
 * Creational Design Patterns
-	* Singleton Pattern
-	* Factory Pattern
+	* [Singleton Pattern](#singleton-pattern)
+	* [Factory Pattern](#factory-pattern)
 	* Abstract Factory Pattern
 	* Builder Pattern
 	* Prototype Pattern
@@ -50,7 +50,7 @@ All the material I went through is written in Java, only because that I am more 
 	* Iterator Pattern
 	* Memento Pattern
 
-## Singleton Pattern
+## <a name="singleton-pattern">Singleton Pattern</a>
 
 Singleton Pattern is to make sure there is only one instance in whole application, such as setting file. 
 
@@ -59,7 +59,7 @@ key elements:
 * A private class variable refering to the one instance of your Singleton class.
 * A public method in the class that will create an instance of this class, but only if an instance does not exist already.
 
-## Factory Pattern
+## <a name="factory-pattern">Factory Pattern</a>
 
 Factory class creates objects like a real factory creates products. There are different categories and products can send to different stores.
 
@@ -88,12 +88,11 @@ Generally the adapter pattern transforms one interface into another. The adapter
 One way to implement Adapter Pattern is to use wrapper classes that implement a unified interface to wrap the original classes.
 
 key elements:
-* original class.
-* design the interface.
+* Original class.
+* Design the interface.
 * Implement wrapper class using the interface
 * In wrapper class, a class variable refering to a instance of the original class
 * In wrapper class, the implementation of methods delegate to methods of the original class
-
 
 ## Composite Pattern
 
