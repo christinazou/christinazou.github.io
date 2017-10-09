@@ -1,8 +1,8 @@
 ---
 layout: post
-title: some tech blog 
-date: 2017-10-07 23:45:11 -0700
-description:  
+title: some tech blogs 
+date: 2017-10-09 00:27:56 -0700
+description: a running list of tech blogs  
 tags: []
 ---
 

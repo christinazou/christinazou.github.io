@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Design Pattern note 1
-date: 2017-10-08 00:00:00 +0300
+date: 2017-10-08 12:30:10 -0700
 description: a note for Design Pattern. I found several reading materials on the internet and a course on Coursera. Here is what I learned. # Add post description (optional)
 tags: [Design Pattern]
 ---
