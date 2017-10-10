@@ -97,17 +97,43 @@ key elements:
 
 ## Composite Pattern
 
-Composite Pattern helps create a structure, which consists of instances of composite class. Each instance works as a node.
+Composite Pattern helps create a structure, which consists of instances of composite classes. we could imagine it as a big triangle consist by smaller triangles, and these triangles are consist of even more smaller triangles.
 
-must have element: 
+key elements:
+* Design the interface.
+* Define subclasses implement interface.
+* The sublclass could include instances of class that implement the same interface. if so, the subclass need to provide iterate add delete function of these instance.
+
+## Proxy Pattern 
+
+The proxy design pattern allows a proxy class to act as a placeholder to represent a real subject class.
+
+key elements:
+* Both the proxy class and the real subject class implement a common subject interface.
+* The proxy class and the real subject class will implement the interface differently.
+
+## Decorator Pattern
+
+Decorator Pattern allows object to dynamically add behaviors to others.
+
+* Design the interface.
+* Create concrete classes implementing the same interface.
+* Create abstract decorator class implementing the Shape interface.
+* The abstract decorator class will wrap the class implementing the Shape interface.
+* Create concrete decorator class extending the abstract decorator class.
+
 
 ## Qustions
 
 the Brige Pattern sound similar to Adapter Pattern and Facade Pattern. what the difference between them? why Brige Pattern is nessesery? 
+
+What's the differ between Facade Pattern and Proxy Pattern?
 
 ## References
 
 Since the famous book "Design Pattern" written by the gang of four uses c++ as implementing language, I choose other material to look at instead. I read the tutorials form [tutorialspoint.com](https://www.tutorialspoint.com/design_pattern/) and [journaldev.com](https://www.journaldev.com/1827/java-design-patterns-example-tutorial), then I watched the vedios from [Design Patterns by University of Alberta](https://www.coursera.org/learn/design-patterns/home/welcome). 
 
 This is a very clean explaination of [Adapter Pattern](https://stackoverflow.com/questions/1299167/understanding-adapter-pattern). 
+
+When I was looking for more on the internet I found this web site [sourcemaking.com](https://sourcemaking.com/design_patterns). The defination of each Design Pattern is a little bit different from others. It's nice to have more perspective.
 
