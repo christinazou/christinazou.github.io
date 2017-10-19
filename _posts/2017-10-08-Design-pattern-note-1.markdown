@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Design Pattern note 1
+title: Design Pattern note
 date: 2017-10-08 12:30:10 -0700
 description: a note for Design Pattern. I found several reading materials on the internet and a course on Coursera. Here is what I learned. # Add post description (optional)
 tags: [Design Pattern]
@@ -54,6 +54,12 @@ All the material I went through is written in Java, only because that I am more 
 ## <a name="singleton-pattern">Singleton Pattern</a>
 
 Singleton Pattern is to make sure there is only one instance in whole application, such as setting file. 
+
+to enforce instantiation of only one object of a class
+to provide global access to an object
+
+Give the Singleton class a private constructor
+Write a method that can create a new Singleton object or return the existing one.
 
 key elements:
 * A private constructor of Singleton class.
@@ -116,18 +122,63 @@ key elements:
 
 Decorator Pattern allows object to dynamically add behaviors to others.
 
+key elements:
 * Design the interface.
-* Create concrete classes implementing the same interface.
-* Create abstract decorator class implementing the Shape interface.
-* The abstract decorator class will wrap the class implementing the Shape interface.
+* Create concrete classes implementing the  interface.
+* Create abstract decorator class implementing the same interface.
+* The abstract decorator class will concrete the class implementing the interface.
 * Create concrete decorator class extending the abstract decorator class.
 
+## Template Method Pattern
+
+>The template method pattern is a practical application of generalization and inheritance. 
+
+key elements:
+* A public template method and abstract methods in the superclass.
+* The template methode will use a general set of steps.
+* The common method of subclasses will be implemented in superclass.
+* These methods are special to each subclass will be implemented in the subclass.
+
+## Chain of Responsibility Pattern
+
+key elements:
+* A public template method and abstract methods in the superclass.
+* The template methode will use a general set of steps.
+* The common method of subclasses will be implemented in superclass.
+* These methods are special to each subclass will be implemented in the subclass.
+
+## command pattern
+
+>One purpose of using the command pattern is to store and schedule different requests. you can not store or manage methode call, but turning these request into command objects can allow you to treat them as the way you would treat other objects. 
+>
+>Another main benefit of the command pattern is that it decouples the objects of your software program. When you have a class that wants to make a request, that class doesn't need to know about the other objects in the software system.
+>
+>The command pattern also allows you to pull out logic from your user interfaces. Usually, code-to-handle requests is put into the event handlers of user interfaces. However, it doesn't really make sense to have a lot of application logic sitting in your user interface classes. The user interface classes should only be dealing with user interface issues like getting information to and from the user. Instead, the command pattern creates a new layer which is where these command objects will go. 
+
+key elements:
+* There need be a invoker to invoke these command, and a command manager to manege the command
+* You have a command super-class and all commands will be instances of sub-classes of this command super-class. 
+* Super-class defines the common behaviors of your commands. 
+* Each command will have the methods execute, unexecute and isReversible. 
+* The execute method will actually do the work that the command is supposed to do, 
+* unexecute will do the work of undoing the command, and 
+* isReversible determines if the command is reversible, returning true if the command can be undone. There could be some commands that can't be undone. 
+
+## Observer Pattern
+
+key elements:
+* First, we'll have a Subject superclass that defines three methods, allow a new observer to subscribe, allow a current observer to unsubscribe, and notify all observers about a new blog post.This superclass would also have an attribute to keep track of all the observers,
+* The blog Class will be a subclass of the Subject superclass.
+* The observer interface will have a update method.
+* the Subscriber Class will implement the observer interface. 
 
 ## Qustions
 
 the Brige Pattern sound similar to Adapter Pattern and Facade Pattern. what the difference between them? why Brige Pattern is nessesery? 
 
 What's the differ between Facade Pattern and Proxy Pattern?
+
+What's the differ between Decorator Pattern and Template Method Pattern?
 
 ## References
 
