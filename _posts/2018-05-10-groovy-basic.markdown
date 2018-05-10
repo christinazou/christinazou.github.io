@@ -12,33 +12,33 @@ tags: [groovy]
 
 ---
 
-#Groovy
+# Groovy
 
-##Closures
+## Closures
 
-###Parameters
+### Parameters
 
 ```groovy
-def power = { int x, int y -\>
+def power = { int x, int y ->
  return Math.pow(x, y)
 }
 ```
 
-####you can also skip the type of parameters
+#### you can also skip the type of parameters
 ```groovy
-def say = { what -\>
+def say = { what ->
  println what
 }
 ```
-####closure can accept one parameter which is available by the name it inside of the closure
+#### closure can accept one parameter which is available by the name it inside of the closure
 ```groovy
 def say = { println it }
 ```
-###Optional Return
+### Optional Return
 
 the last statement of a method block (or closure) is returned implicitly
 
-###Passing Closures around
+### Passing Closures around
 ```groovy
 def transform = { str, transformation ->
  transformation(str)
@@ -47,9 +47,9 @@ println transform("Hello World", { it.toUpperCase() })
 ``` 
 
 
-###Closing of variables
+### Closing of variables
 ```groovy
-def createGreeter = { name -\>
+def createGreeter = { name ->
  return {
  def day = new Date().getDay()
  if (day == 0 || day == 6) {
@@ -65,7 +65,7 @@ def greetWorld = createGreeter("World")
 greetWorld()
 ```
 
-##Implicit Truthy
+## Implicit Truthy
 
 - Strings: If empty false, otherwise true
 - Collections and Maps are true if they are not empty
@@ -74,13 +74,13 @@ greetWorld()
 - Iterators with further elements are true
 - Object references are true if they aren't null (you can define a custom truthy logic for your classes by implementing the boolean asBoolean() method)
 
-##New and noteworthy Operators
+## New and noteworthy Operators
 
 Safe Navigation Operator “?”
 ```groovy
 if(company.getContact()?.getAddress()?.getCountry() == Country.NEW\_ZEALAND) { ... }
 ```
-##Ranges
+## Ranges
 
 - 1..10 - an inclusive Range
 - 1..\<10 - f an exclusive Range
@@ -88,7 +88,7 @@ if(company.getContact()?.getAddress()?.getCountry() == Country.NEW\_ZEALAND) { .
 - 10..1 – Ranges can also be in descending order
 - ‘x’..’a’ – Ranges can also consist of characters and be in descending order.
 
-##Regular Expressions
+## Regular Expressions
 
 def matcher = "The Hitchhiker's Guide to the Galaxy" =~ /Galaxy/
 
@@ -100,7 +100,7 @@ if (matcher) {
 
 if You define a string inside two slashes /../, that you don't need to escape a backslash character,
 
-##Traits 
+## Traits 
 
 They can be seen as interfaces carrying both default implementations and state.
 
