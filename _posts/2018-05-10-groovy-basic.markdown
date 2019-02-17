@@ -2,7 +2,7 @@
 
 layout: post
 
-title: groovy basic 
+title: Note - groovy basic 
 
 date: 2018-05-10 15:54:45 -0800
 
